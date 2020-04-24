@@ -8,7 +8,7 @@ app.use(express.json());
 var databaseToUse = ""
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static('client/build'));
-	databaseToUse = "mongodb://Project3:Filipo21@ds143604.mlab.com:43604/heroku_n6fbsh2q";
+	databaseToUse = "mongodb://tmf:Filipo21@ds111063.mlab.com:11063/heroku_gfwvqtk5";
 }
 else {
 	databaseToUse = 'mongodb://localhost';
