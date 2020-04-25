@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === "production") {
 	databaseToUse = "mongodb://tmf:Filipo21@ds111063.mlab.com:11063/heroku_gfwvqtk5";
 }
 else {
-	databaseToUse = 'mongodb://localhost';
+	databaseToUse = 'mongodb://localhost/test1';
 }
 app.use(routes);
 const MONGODB_URI = process.env.MONGODB_URI || databaseToUse;
